@@ -1,0 +1,14 @@
+C:\Users\tevol\OneDrive\Desktop\code\cs\AutoBackup\AutoBackup\bin\Debug\net9.0\AutoBackup.exe
+C:\Users\tevol\OneDrive\Desktop\code\cs\AutoBackup\AutoBackup\bin\Debug\net9.0\AutoBackup.deps.json
+C:\Users\tevol\OneDrive\Desktop\code\cs\AutoBackup\AutoBackup\bin\Debug\net9.0\AutoBackup.runtimeconfig.json
+C:\Users\tevol\OneDrive\Desktop\code\cs\AutoBackup\AutoBackup\bin\Debug\net9.0\AutoBackup.dll
+C:\Users\tevol\OneDrive\Desktop\code\cs\AutoBackup\AutoBackup\bin\Debug\net9.0\AutoBackup.pdb
+C:\Users\tevol\OneDrive\Desktop\code\cs\AutoBackup\AutoBackup\obj\Debug\net9.0\AutoBackup.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tevol\OneDrive\Desktop\code\cs\AutoBackup\AutoBackup\obj\Debug\net9.0\AutoBackup.AssemblyInfoInputs.cache
+C:\Users\tevol\OneDrive\Desktop\code\cs\AutoBackup\AutoBackup\obj\Debug\net9.0\AutoBackup.AssemblyInfo.cs
+C:\Users\tevol\OneDrive\Desktop\code\cs\AutoBackup\AutoBackup\obj\Debug\net9.0\AutoBackup.csproj.CoreCompileInputs.cache
+C:\Users\tevol\OneDrive\Desktop\code\cs\AutoBackup\AutoBackup\obj\Debug\net9.0\AutoBackup.dll
+C:\Users\tevol\OneDrive\Desktop\code\cs\AutoBackup\AutoBackup\obj\Debug\net9.0\refint\AutoBackup.dll
+C:\Users\tevol\OneDrive\Desktop\code\cs\AutoBackup\AutoBackup\obj\Debug\net9.0\AutoBackup.pdb
+C:\Users\tevol\OneDrive\Desktop\code\cs\AutoBackup\AutoBackup\obj\Debug\net9.0\AutoBackup.genruntimeconfig.cache
+C:\Users\tevol\OneDrive\Desktop\code\cs\AutoBackup\AutoBackup\obj\Debug\net9.0\ref\AutoBackup.dll
