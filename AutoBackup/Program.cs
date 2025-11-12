@@ -25,36 +25,54 @@ public class Program()
         if (JsonMap["Game"] == "Terraria")
         {
             mundo = Terraria();
-            Console.WriteLine(mundo);
+            Console.WriteLine($"nome do mundo Terraria: {mundo}");
         }
 
         if (JsonMap["Game"] == "Stardew")
         {
             mundo = StardewValley();
-            Console.WriteLine(mundo);
+            Console.WriteLine($"nome do mundo Stardew: {mundo}");
         }
         
     }
 
     #region AuxiliaryFunctions
 
-    public static string CheckAndReturnDirectory(string path)
+    public static string CheckAndReturnDirectory(string path, string game)
     {
+        
         string mundo;
+        
         string[] folders = Directory.GetDirectories(path);
         List<string>? files =  new List<string>();
+        
+        if (game == "TERRARIA")
+        {
+            Console.WriteLine("Lista de mundos: ");
+            folders = Directory.GetFiles(path);
+            foreach (string folder in folders)
+            {
+                files.Add(Path.GetFileName(folder.ToUpper()));
+                Console.WriteLine(Path.GetFileName(folder));
+            }
+            
+        }
+        else
+        {
+            
         Console.WriteLine("Lista de pastas:");
         foreach (string folder in folders)
         {
             files.Add(Path.GetFileName(folder.ToUpper()));
             Console.WriteLine(Path.GetFileName(folder));
         }
+        }
 
         
         int counter = 0;
         do
         {
-            string mensagem = (counter<1)? "Escolha o mundo a ser feito backup:" : "Mundo inexistente, insira novamente:";
+            string mensagem = (counter<1)? "Escolha o mundo a ser feito backup(Com a extensao): " : "Mundo inexistente, insira novamente:";
             Console.WriteLine(mensagem);
             mundo = Console.ReadLine();
             counter++;
@@ -64,14 +82,14 @@ public class Program()
     }
 
     #endregion
-
+    
     #region FunctionsByGame
 
     public static string Terraria()
     {
         
         path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)+"\\My Games\\Terraria\\Worlds"; 
-        return CheckAndReturnDirectory(path);
+        return CheckAndReturnDirectory(path, "TERRARIA");
         
         
     }
@@ -80,7 +98,7 @@ public class Program()
     {
         
         path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)+ "\\StardewValley\\Saves";
-        return CheckAndReturnDirectory(path);
+        return CheckAndReturnDirectory(path, "STARDEW");
 
     }
     
