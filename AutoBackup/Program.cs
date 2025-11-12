@@ -17,22 +17,26 @@ public class Program()
         string mundo = "NULL";
         
         Dictionary<string, string> JsonMap =  new Dictionary<string, string>();
-        JsonMap.Add("Game", JSON.Game);
+        JsonMap.Add("Game", (JSON.Game).ToUpper());
         JsonMap.Add("RepoExists", JSON.RepoExists);
         JsonMap.Add("Branch", JSON.Branch);
         JsonMap.Add("GitFolder", JSON.GitFolder);
 
-        if (JsonMap["Game"] == "Terraria")
+        switch (JsonMap["Game"])
         {
-            mundo = Terraria();
-            Console.WriteLine($"nome do mundo Terraria: {mundo}");
+            case "TERRARIA":
+                mundo = Terraria();
+                Console.WriteLine($"nome do mundo Terraria: {mundo}");
+                break;
+            case "STARDEW":
+                    mundo = StardewValley();
+                    Console.WriteLine($"nome do mundo Stardew: {mundo}");
+                    break;
+            default:
+                Console.WriteLine("Jogo inexistente");
+                break;
         }
-
-        if (JsonMap["Game"] == "Stardew")
-        {
-            mundo = StardewValley();
-            Console.WriteLine($"nome do mundo Stardew: {mundo}");
-        }
+        
         
     }
 
