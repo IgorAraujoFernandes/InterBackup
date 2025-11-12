@@ -12,3 +12,4 @@ C:\Users\tevol\OneDrive\Desktop\code\cs\AutoBackup\AutoBackup\obj\Debug\net9.0\r
 C:\Users\tevol\OneDrive\Desktop\code\cs\AutoBackup\AutoBackup\obj\Debug\net9.0\AutoBackup.pdb
 C:\Users\tevol\OneDrive\Desktop\code\cs\AutoBackup\AutoBackup\obj\Debug\net9.0\AutoBackup.genruntimeconfig.cache
 C:\Users\tevol\OneDrive\Desktop\code\cs\AutoBackup\AutoBackup\obj\Debug\net9.0\ref\AutoBackup.dll
+C:\Users\tevol\OneDrive\Desktop\code\cs\AutoBackup\AutoBackup\obj\Debug\net9.0\AutoBackup.sourcelink.json
