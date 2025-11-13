@@ -7,6 +7,9 @@ using System.Text.Json.Nodes;
 public class Program()
 {
     public static string path = "NULL";
+    public static string mundo = "NULL";
+    public static string CommitMessage = " ";
+    public static DateTime date = new DateTime();
     public static void Main(string[] args)
     {
         
@@ -14,19 +17,20 @@ public class Program()
         
         Controller JSON =  JsonSerializer.Deserialize<Controller>(JsonToFile);
 
-        string mundo = "NULL";
         
         Dictionary<string, string> JsonMap =  new Dictionary<string, string>();
         JsonMap.Add("Game", (JSON.Game).ToUpper());
         JsonMap.Add("RepoExists", JSON.RepoExists);
         JsonMap.Add("Branch", JSON.Branch);
         JsonMap.Add("GitFolder", JSON.GitFolder);
-
+        
         switch (JsonMap["Game"])
         {
             case "TERRARIA":
                 mundo = Terraria();
-                Console.WriteLine($"nome do mundo Terraria: {mundo}");
+                date = DateTime.Now;
+                CommitMessage = $"Mundo: {mundo} salvo em: {date}";
+                Console.WriteLine(CommitMessage);
                 break;
             case "STARDEW":
                     mundo = StardewValley();
@@ -40,8 +44,31 @@ public class Program()
         
     }
 
-    #region AuxiliaryFunctions
+    #region GitFunctions
 
+    public static void GitFirstConfiguration()
+    {
+        Console.WriteLine("Cole a URL do repositorio git: ");
+        string GitRepository = Console.ReadLine();
+        
+        
+    }
+    
+    public static void GitCommit(string Message)
+    {
+        
+        Process.Start("git", "init");
+        Process.Start("git", "add .");
+        Process.Start("git", $"commit -m '{Message}'");
+        Process.Start("git", "push -U origin main");
+        
+    }
+    
+
+    #endregion
+    
+    #region AuxiliaryFunctions
+    
     public static string CheckAndReturnDirectory(string path, string game)
     {
         
